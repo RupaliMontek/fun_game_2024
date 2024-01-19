@@ -1,0 +1,825 @@
+CRITICAL - 2024-01-16 09:52:43 --> Invalid file: "hiiii.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hiiii.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('hiiii', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('hiiii')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 09:52:51 --> Undefined constant "App\Controllers\hiiii"
+in APPPATH\Controllers\Home.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 09:53:00 --> Invalid file: "hiiii.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hiiii.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('hiiii', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('hiiii')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:00:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:00:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:00:42 --> Call to undefined function form_open()
+in APPPATH\Views\super_admin\login.php on line 11.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('super_admin/login', [], true)
+ 4 APPPATH\Controllers\SuperAdmin.php(14): view('super_admin/login')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:02:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:02:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:04:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:04:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:04:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:04:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:11:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:11:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:11:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:11:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:11:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:11:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$session is deprecated in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-16 10:11:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$SuperAdminModel is deprecated in APPPATH\Controllers\SuperAdmin.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:12:01 --> Class "App\Controllers\BaseController" not found
+in APPPATH\Controllers\SuperAdmin.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SuperAdmin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SuperAdmin')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SuperAdmin', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:12:35 --> Class "App\Controllers\BaseController" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:12:36 --> Class "App\Controllers\BaseController" not found
+in APPPATH\Controllers\Home.php on line 5.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\Home.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:29:54 --> Class "CI_Controller" not found
+in APPPATH\Controllers\SuperAdmin.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SuperAdmin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SuperAdmin')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SuperAdmin', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:34:52 --> Class "CI_Controller" not found
+in APPPATH\Controllers\SuperAdmin.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SuperAdmin')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SuperAdmin')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SuperAdmin', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:36:33 --> Cannot call constructor
+in APPPATH\Controllers\SuperAdmin.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:36:45 --> Cannot call constructor
+in APPPATH\Controllers\SuperAdmin.php on line 8.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:36:51 --> Undefined property: App\Controllers\SuperAdmin::$load
+in APPPATH\Controllers\SuperAdmin.php on line 9.
+ 1 APPPATH\Controllers\SuperAdmin.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$load', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:39:08 --> Class "CI_Model" not found
+in APPPATH\Models\SuperAdmin_model.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Models\\SuperAdmin_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SuperAdmin_model')
+ 4 APPPATH\Controllers\SuperAdmin.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SuperAdmin_model')
+ 5 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:39:19 --> Class "Model" not found
+in APPPATH\Models\SuperAdmin_model.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Models\\SuperAdmin_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SuperAdmin_model')
+ 4 APPPATH\Controllers\SuperAdmin.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SuperAdmin_model')
+ 5 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:39:45 --> Class "CI_Model" not found
+in APPPATH\Models\SuperAdmin_model.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Models\\SuperAdmin_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SuperAdmin_model')
+ 4 APPPATH\Controllers\SuperAdmin.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SuperAdmin_model')
+ 5 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:41:13 --> Class "CI_Model" not found
+in APPPATH\Models\SuperAdmin_model.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Models\\SuperAdmin_model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SuperAdmin_model')
+ 4 APPPATH\Controllers\SuperAdmin.php(11): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SuperAdmin_model')
+ 5 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:42:34 --> Array to string conversion
+in APPPATH\Views\super_admin\login.php on line 67.
+ 1 APPPATH\Views\super_admin\login.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Views\\super_admin\\login.php', 67)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Game-CI4\\app\\Views\\super_admin\\login.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('super_admin/login', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(16): view('super_admin/login')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:43:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 10:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:45:56 --> Undefined property: App\Controllers\SuperAdmin::$input
+in APPPATH\Controllers\SuperAdmin.php on line 20.
+ 1 APPPATH\Controllers\SuperAdmin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$input', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:47:20 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 22.
+ 1 APPPATH\Controllers\SuperAdmin.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:48:42 --> Undefined property: App\Controllers\SuperAdmin::$load
+in APPPATH\Controllers\SuperAdmin.php on line 12.
+ 1 APPPATH\Controllers\SuperAdmin.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$load', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:49:23 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 23.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:50:17 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 23.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:50:43 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 23.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:51:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get_where()
+in APPPATH\Models\SuperAdmin_model.php on line 11.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:52:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:52:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get_where()
+in APPPATH\Models\SuperAdmin_model.php on line 11.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:53:04 --> syntax error, unexpected token "if"
+in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\Game-CI4\\app\\Models\\SuperAdmin_model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\SuperAdmin_model')
+ 3 APPPATH\Controllers\SuperAdmin.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\SuperAdmin_model')
+ 4 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:53:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\SuperAdmin_model.php on line 11.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:54:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\SuperAdmin_model.php on line 11.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:55:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 10:55:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::where()
+in APPPATH\Models\SuperAdmin_model.php on line 11.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:55:56 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 12.
+ 1 APPPATH\Models\SuperAdmin_model.php(12): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:55:56 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in C:\xampp\htdocs\Game-CI4\app\Models\SuperAdmin_model.php on line 13
+in SYSTEMPATH\Database\BaseBuilder.php on line 1607.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): CodeIgniter\Database\BaseBuilder->get('super_admins')
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:57:05 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-16 10:57:05 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\Game-CI4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\Game-CI4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\xampp\htdocs\Game-CI4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Game-CI4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Game-CI4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Game-CI4\app\Models\SuperAdmin_model.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Game-CI4\app\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(NULL, NULL)
+#6 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+#7 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+#8 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Game-CI4\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\Game-CI4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\Game-CI4\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Game-CI4\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Game-CI4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Game-CI4\app\Models\SuperAdmin_model.php(14): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Game-CI4\app\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(NULL, NULL)
+#5 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+#6 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+#7 C:\xampp\htdocs\Game-CI4\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Game-CI4\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-16 10:57:05 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `super_admins`
+WHERE `username` IS NULL
+AND `password` = :password:', [...], false)
+ 3 APPPATH\Models\SuperAdmin_model.php(14): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:57:56 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:57:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:59:09 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:59:09 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 10:59:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 10:59:25 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 10:59:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::num_rows()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:00:00 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:00:00 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:00:01 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:00:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:03:36 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:03:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:03:38 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:03:38 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAll()
+in APPPATH\Models\SuperAdmin_model.php on line 15.
+ 1 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:04:30 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:04:30 --> Undefined property: App\Controllers\SuperAdmin::$load
+in APPPATH\Controllers\SuperAdmin.php on line 32.
+ 1 APPPATH\Controllers\SuperAdmin.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$load', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 11:05:43 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(23): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:05:58 --> Call to undefined method CodeIgniter\Session\Session::set_userdata()
+in APPPATH\Controllers\SuperAdmin.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:06:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:06:54 --> The route for "superadmin/dashboard" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('superadmin/dashboard')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SuperAdmin.php(29): redirect('superadmin/dashboard')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:49:31 --> syntax error, unexpected identifier "s"
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:49:36 --> syntax error, unexpected identifier "s"
+in APPPATH\Config\Routes.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 11:49:52 --> Undefined variable $route
+in APPPATH\Config\Routes.php on line 10.
+ 1 APPPATH\Config\Routes.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Config\\Routes.php', 10)
+ 2 SYSTEMPATH\Router\RouteCollection.php(344): require('C:\\xampp\\htdocs\\Game-CI4\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 11:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:52:12 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 38.
+ 1 APPPATH\Controllers\SuperAdmin.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:53:42 --> Class "App\Controllers\SuperAdmin_model" not found
+in APPPATH\Controllers\SuperAdmin.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\SuperAdmin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:53:49 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 41.
+ 1 APPPATH\Controllers\SuperAdmin.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:58:10 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 39.
+ 1 APPPATH\Controllers\SuperAdmin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:58:11 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 39.
+ 1 APPPATH\Controllers\SuperAdmin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 11:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 11:59:29 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 39.
+ 1 APPPATH\Controllers\SuperAdmin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 12:00:00 --> Undefined property: App\Controllers\SuperAdmin::$SuperAdmin_model
+in APPPATH\Controllers\SuperAdmin.php on line 39.
+ 1 APPPATH\Controllers\SuperAdmin.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$SuperAdmin_model', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 12:01:07 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::get()
+in APPPATH\Models\SuperAdmin_model.php on line 35.
+ 1 APPPATH\Controllers\SuperAdmin.php(40): App\Models\SuperAdmin_model->get_all_admins()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 12:01:46 --> Array to string conversion
+in APPPATH\Views\super_admin\dashboard.php on line 20.
+ 1 APPPATH\Views\super_admin\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Views\\super_admin\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\Game-CI4\\app\\Views\\super_admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('super_admin/dashboard', [], true)
+ 5 APPPATH\Controllers\SuperAdmin.php(43): view('super_admin/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:02:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:06:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-16 12:07:57 --> Undefined property: App\Controllers\SuperAdmin::$load
+in APPPATH\Controllers\SuperAdmin.php on line 100.
+ 1 APPPATH\Controllers\SuperAdmin.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SuperAdmin::$load', 'C:\\xampp\\htdocs\\Game-CI4\\app\\Controllers\\SuperAdmin.php', 100)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:08:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 12:08:41 --> Call to undefined method CodeIgniter\Validation\Validation::set_rules()
+in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:09:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 12:09:37 --> Call to undefined method CodeIgniter\Validation\Validation::set_rules()
+in APPPATH\Controllers\SuperAdmin.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:10:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:10:49 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:11:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:12:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:12:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:13:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:13:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:13:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:32:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:32:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:32:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:40:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 12:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:41:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 12:43:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 12:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 13:00:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 13:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 13:00:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\SuperAdmin::$form_validation is deprecated in APPPATH\Controllers\SuperAdmin.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->create_account_from_dashboard()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 13:00:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 13:04:47 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(24): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 13:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-16 13:04:58 --> [DEPRECATED] md5(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Models\SuperAdmin_model.php on line 13.
+ 1 APPPATH\Models\SuperAdmin_model.php(13): md5(null)
+ 2 APPPATH\Controllers\SuperAdmin.php(24): App\Models\SuperAdmin_model->verify_login(null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SuperAdmin->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SuperAdmin))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-16 13:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-16 13:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
