@@ -1,5 +1,5 @@
 
-    <title>Change Password</title>
+    <title>Change Password by shweta</title>
     <div class="col-auto col-md-9">
     <div class="container mt-5">
     <h1>Change Password</h1>
