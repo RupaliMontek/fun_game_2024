@@ -249,4 +249,79 @@ class SuperAdmin extends Controller {
             return redirect()->to('superadmin/dashboard');
         }
     }
+    public function history()
+    {
+        $data['history'] = $this->SuperAdmin_model->get_user_history();
+
+        echo view('templates/header', $data);
+        echo view('templates/sidebar', $data);
+        echo view('super_admin/history', $data);
+        echo view('templates/footer');
+    }
+    public function setting()
+    {
+        $data['setting'] = $this->SuperAdmin_model->get_user_setting();
+
+        return view('super_admin/setting', $data);
+    }
+public function change_password()
+{
+    $userRole = $this->session->get('role');
+
+    if ($userRole !== 'super-admin') {
+        return redirect()->to('superadmin/dashboard')->with('error', 'You do not have the authority to change the password.');
+    }
+    echo view('templates/header');
+    echo view('templates/sidebar');
+    return view('super_admin/change_password');
+    echo view('templates/footer');
+}
+
+public function profile()
+{
+    $superAdminId = $this->session->get('user_id');
+    $superAdminDetails = $this->SuperAdminModel->get_admin_user_details($superAdminId);
+
+    $data['superAdminDetails'] = $superAdminDetails;
+    return view('super_admin/profile', $data);
+}
+
+public function update_profile()
+{
+    $superAdminId = $this->session->get('user_id');
+    $superAdminDetails = $this->SuperAdminModel->get_admin_user_details($superAdminId);
+
+    // Validate form inputs
+    $validationRules = [
+        'first_name' => 'required',
+        'last_name'  => 'required',
+        'image'      => 'uploaded[image]|max_size[image,1024]|mime_in[image,image/jpg,image/jpeg,image/png]',
+    ];
+
+    if (!$this->validate($validationRules)) {
+        // Validation failed, return to the profile page with errors
+        return redirect()->to('superadmin/profile')->withInput()->with('validation', $this->validator);
+    }
+
+    // Handle image upload
+    $image = $this->request->getFile('image');
+    if ($image->isValid() && !$image->hasMoved()) {
+        $newImageName = $superAdminId . '_' . time() . '.' . $image->getExtension();
+        $image->move(ROOTPATH . 'public/uploads/profile', $newImageName);
+
+        // Update the database with the new image name
+        $this->SuperAdminModel->update_profile_image($superAdminId, $newImageName);
+    }
+
+    // Update other profile details
+    $data = [
+        'first_name' => $this->request->getPost('first_name'),
+        'last_name'  => $this->request->getPost('last_name'),
+    ];
+
+    $this->SuperAdminModel->update_admin_account_details($superAdminId, $data);
+
+    return redirect()->to('superadmin/profile')->with('success_message', 'Profile updated successfully');
+}
+
 }

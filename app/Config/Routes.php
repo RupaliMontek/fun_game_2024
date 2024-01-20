@@ -42,5 +42,8 @@ $routes->get('superadmin/edit_admin_user/(:num)', 'Superadmin::edit_admin_user/$
 $routes->get('admin/edit_player_details/(:num)', 'Admin::edit_player_details/$1');
 $routes->post('superadmin/update_account_details_admin/(:num)', 'SuperAdmin::update_account_details_admin/$1');
 $routes->post('admin/update_players_account_details/(:num)', 'Admin::update_players_account_details/$1');
-
-
+$routes->get('superadmin/history', 'SuperAdmin::history');
+$routes->get('superadmin/setting', 'SuperAdmin::setting');
+$routes->get('superadmin/change_password', 'SuperAdmin::change_password');
+$routes->get('profile', 'SuperAdmin::profile');
+    $routes->post('update_profile', 'SuperAdmin::update_profile');

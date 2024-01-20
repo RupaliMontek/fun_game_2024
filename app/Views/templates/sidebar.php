@@ -56,6 +56,20 @@
                         <a href="#" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                     </li>
+                    <!--  -->
+                    <li>
+                        <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Setting</span> </a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Change Background theme</span></a>
+                            </li>
+                            <li>
+                                <a href="<?php echo base_url("superadmin/change_password")?>" class="nav-link px-0"> <span class="d-none d-sm-inline">Change Password</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                
                 </ul>
                 <hr>                
             </div>

@@ -94,5 +94,21 @@ public function get_user_by_id(int $user_id): ?object
         // Check if the result is not empty before returning
         return ($query->getNumRows() > 0) ? $query->getRow() : null;
     }
+    public function get_user_history()
+    {
+        // Retrieve the user history from the database
+        $query = $this->db->table('super_admins')->select('username, role, current_wallet, amout_given')->get();
+
+        // Return the result as an array
+        return $query->getResultArray();
+    }
+    public function get_user_setting()
+    {
+        // Retrieve the user history from the database
+        $query = $this->db->table('super_admins')->select('username, role, current_wallet, amout_given')->get();
+
+        // Return the result as an array
+        return $query->getResultArray();
+    }
 }
 

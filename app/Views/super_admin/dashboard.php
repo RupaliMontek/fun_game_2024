@@ -1,4 +1,9 @@
- 
+<!-- <style>
+*, ::after, ::before {
+    box-sizing: border-box;
+    color: black;
+} -->
+</style>
 <div class="col-auto col-md-9">
         <div class="container mt-5">
         <a href="<?= base_url('superadmin/add_admin_user'); ?>" class="btn btn-primary">Add Admin</a>   
@@ -23,7 +28,7 @@
                     <td><?php if(!empty($admin->amout_given)){echo $admin->amout_given;} else{ echo "0"; } ?></td>
                     <td><?php if(!empty($admin->current_wallet)){echo $admin->current_wallet;} else{ echo $admin->amout_given; } ?></td>
                     <td>
-<li class="list-inline-item">
+<li class="list-inline-item" id= "list-inline-item">
                     
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         
