@@ -5,27 +5,15 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-// $routes->get('/', 'SuperAdmin::index');
-// $routes->get('superadmin', 'SuperAdmin::index');
-// $routes->get('superadmin/login', 'SuperAdmin::login');
-// $routes->get('superadmin/dashboard', 'SuperAdmin::dashboard');
-// $routes->get('superadmin/logout', 'SuperAdmin::logout');
-// $routes->add('superadmin/register', 'SuperAdmin::register');
-// $routes->add('superadmin/create_account', 'SuperAdmin::create_account');
-// $routes->add('superadmin/login_as/(:num)', 'SuperAdmin::login_as/$1');
-// $routes->get('admin/dashboard', 'Admin::dashboard');
-// $routes->match(['get', 'post'], 'superadmin/login', 'SuperAdmin::login');
-// // $routes->post('superadmin/create_account_from_dashboard', 'SuperAdmin::create_account_from_dashboard');
-// // app/Config/Routes.php
-$routes->get('/', 'SuperAdmin::index');
+$routes->get('/', 'login::index');
 $routes->get('superadmin', 'SuperAdmin::index');
 $routes->add('superadmin/login', 'SuperAdmin::login');
-$routes->get('superadmin/dashboard', 'SuperAdmin::dashboard');
+$routes->get('superadmin/admin_user_list', 'SuperAdmin::admin_user_list');
 $routes->get('superadmin/logout', 'SuperAdmin::logout');
 $routes->add('superadmin/register', 'SuperAdmin::register');
 $routes->add('superadmin/create_account', 'SuperAdmin::create_account');
 $routes->get('superadmin/login_as/(:num)', 'SuperAdmin::login_as/$1');
-$routes->get('admin/dashboard', 'Admin::dashboard');
+$routes->get('admin/players_list', 'Admin::players_list');
 $routes->post('superadmin/create_account_from_dashboard', 'SuperAdmin::create_account_from_dashboard');
 $routes->post('admin/create_players_account', 'Admin::create_players_account');
 $routes->get('superadmin/login_as/(:num)', 'SuperAdmin::login_as/$1');
@@ -42,5 +30,15 @@ $routes->get('superadmin/edit_admin_user/(:num)', 'Superadmin::edit_admin_user/$
 $routes->get('admin/edit_player_details/(:num)', 'Admin::edit_player_details/$1');
 $routes->post('superadmin/update_account_details_admin/(:num)', 'SuperAdmin::update_account_details_admin/$1');
 $routes->post('admin/update_players_account_details/(:num)', 'Admin::update_players_account_details/$1');
+$routes->post('admin/check_player_username_exist', 'Admin::check_player_username_exist');
+$routes->post('login/check_login', 'Login::check_login');
+$routes->get('admin/check_player_username_exist', 'Admin::check_player_username_exist');
+$routes->get('admin', 'Admin::index');
+$routes->get('login', 'Login::index');
+$routes->post('login/users_status_change', 'Login::users_status_change');
+$routes->get('logout', 'Login::logout');
+$routes->get('superadmin', 'Superadmin::index');
+
+
 
 

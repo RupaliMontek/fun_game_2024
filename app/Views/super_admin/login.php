@@ -63,7 +63,7 @@
     </style>
 </head>
 <body>
-    <h1>Super Admin Logissssssnsss</h1>
+    <h1>Super Admin Login</h1>
     <?php if (!empty(validation_errors())) : ?>
     <div style="color: red;">
         <?php foreach (explode(PHP_EOL, validation_errors()) as $error) : ?>

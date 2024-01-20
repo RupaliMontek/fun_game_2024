@@ -1,4 +1,5 @@
-<script src="<?= base_url('javascript/validation.js') ?>"></script>
+<script src="<?= base_url('public/javascript/validation.js') ?>"></script>
+<link rel="stylesheet" type="" href="<?= base_url('public/css/style.css') ?>">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
  </div>
 </div> 
@@ -6,7 +7,7 @@
         <div class="container footerInn">
             <footer class="footer">
                 <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Licensed by <a
-                        href="javascript:void(0)">LEO TECH EXIM SOLUTIONS LLP</a>.</span>
+                        href="javascript:void(0)">FUNTARGET</a>.</span>
                 <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
                     2023-2024. All rights reserved.</span>
                 <span class="text-muted d-block text-center text-sm-left d-sm-inline-block txt-rgt">Developed &amp;
@@ -25,7 +26,23 @@
 
 <script>
 var base_url = '<?php echo base_url(); ?>';  
-$(document).ready(function () {
+
+function users_status_change(status,user_id)
+{
+    $.ajax
+    ({
+    url: base_url+'login/users_status_change',      
+    type: 'POST',
+    data: {status:status,user_id:user_id},
+    success:function(data)
+    {
+       location.reload();         
+    }
+    });
+}
+
+
+$(document).ready(function () {    
 $("#player_account_add_form").validate(
     {
       errorElement: "span", 
@@ -33,44 +50,42 @@ $("#player_account_add_form").validate(
       rules: 
       {
         first_name: 
-            {
-                required:true,               
-            },
+        {
+            required:true,               
+        },
         limit_user_add: 
         {
-          required:true,
-          emailtest:true,
-          remote: {
-                url: base_url+"admin/check_player_user_add_limit",
-                type: "post",
-                data: {
-                    email: function() {
-                        return $("#limit_user_add").val();
-                    },
-                }
-            }
+          required:true,               
         },
         last_name: 
-            {
-                required:true,
-            },
-            amout_given: 
-            {
-                required:true,
-                digits:true,
-                mininum:10,
-                maximum:10,
-            },
-            new_username: 
-            {
-                required:true,                
-            },
+        {
+            required:true,
+        },
+        amout_given: 
+        {
+            required:true,                
+        },
+        new_username: 
+        {
+            required:true,  
+            remote: {
+            url: base_url + "admin/check_player_username_exist",
+            type: "POST",
+            data: 
+                {
+                    email: function () 
+                    {
+                            return $("#new_username").val();
+                    }
+                }
+            }             
+        },
              
-      },
+    },
       
 
-      messages: 
-      { 
+    messages: 
+    { 
         first_name: 
         {
                 required:"Required First Name",
@@ -79,23 +94,24 @@ $("#player_account_add_form").validate(
         limit_user_add: 
         {
           required:"Required Email Address",
-          remote:"Player User Add Account Add Limit Reaced Please Contact Superadmin.!",
+          
         },
-         last_name: 
-            {  
-                required:"Required Last Name"
-            },
-            amout_given: 
-            {  
-                required:"Required Amout Given"
-            },
-            new_username: 
-            {  
-                required:"Required Username"
-            },            
+        last_name: 
+        {  
+            required:"Required Last Name"
+        },
+        amout_given: 
+        {  
+            required:"Required Amout Given"
+        },
+        new_username: 
+        {  
+            required:"Required Username",
+            remote:"This Player Name Is Already Exist Please Use Another.!",
+        },            
            
-      },
-    });
+    },
+ });
 });
 
 

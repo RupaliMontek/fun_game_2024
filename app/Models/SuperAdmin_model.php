@@ -4,22 +4,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class SuperAdmin_model extends Model {
-    protected $table = 'super_admins'; 
-
-    public function verify_login($username, $password) {
-        // Your database query to fetch user details based on username
-        $query = $this->db->table('super_admins')
-                          ->where('username', $username)
-                          ->where('password', md5($password))
-                          ->get();
-                          $result = $query->getResult();
-
-                          if (count($result) == 1) {
-                              return $result[0];
-                          } else {
-                              return null;
-                          }
-    }
+    protected $table = 'super_admins';     
 
     public function update_admin_account_details($id,$data)
     {
@@ -69,13 +54,13 @@ class SuperAdmin_model extends Model {
         return $query->getResult();
     }
 
-public function get_all_player_users_list($user_id)
+/*public function get_all_player_users_list($user_id)
 {
     $builder = $this->db->table("super_admins");
     $builder->where('added_by', $user_id);
     $query = $builder->where('role', 'user')->get();
-    return $query->getResult(); // or $query->getResultArray()
-}
+    return $query->getResult(); 
+}*/
 
 
     public function create_user_account($data)
@@ -94,5 +79,15 @@ public function get_user_by_id(int $user_id): ?object
         // Check if the result is not empty before returning
         return ($query->getNumRows() > 0) ? $query->getRow() : null;
     }
+
+public function get_all_player_users_list()
+{
+    $builder = $this->db->table("super_admins");  
+   /* $builder->where('status', '1'); */
+    $query = $builder->where('role', 'user')->get();
+    return $query->getResult(); // or $query->getResultArray()
+}
+
+
 }
 

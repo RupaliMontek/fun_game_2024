@@ -26,6 +26,18 @@ class Admin_model extends Model
         return $superAdmin = $query->getRow();   
     }    
 
+    /*public function check_player_username_exist($username)
+    {
+      $query = $this->db->table('super_admins')->getWhere(['username' => $username]);
+      $result = $query->getResult();
+      return count($result);
+    }*/
 
-}
+    public function check_player_username_exist($username)
+    {
+      $query = $this->db->table('super_admins')->getWhere(['username' => $username]);
+      return $result =  $query->getRow();      
+    }
+
+  }
 ?>

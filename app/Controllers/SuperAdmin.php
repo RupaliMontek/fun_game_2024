@@ -15,43 +15,16 @@ class SuperAdmin extends Controller {
 
     }
 
-    public function index() {
-        return view('super_admin/login');
+    public function index() 
+    {
+        $data["players_list"]= $this->SuperAdminModel->get_all_player_users_list();
+        echo view('templates/header');
+        echo view('templates/sidebar');
+        echo view('super_admin/index',$data); 
+        echo view('templates/footer');     
     }
 
-    public function login() {
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');        
-        $super_admin = $this->SuperAdminModel->verify_login($username, $password);   
-
-        
-        // print_r($super_admin); die();
-        if (!empty($super_admin)) {            
-            $this->session->set('user_id', $super_admin->id);
-            $this->session->set('role', $super_admin->role);
-            $this->session->set('role', $super_admin->role);
-            $this->session->set('username', $super_admin->first_name." ".$super_admin->last_name);
-            if($super_admin->role=="super-admin")
-            {
-                return redirect()->route('superadmin/dashboard');            
-            }
-            elseif($super_admin->role=="admin")
-            {
-               
-                return redirect()->route('admin/dashboard');  
-            }
-
-            elseif($super_admin->role=="user")
-            {
-                return redirect()->route('superadmin/dashboard');  
-            }
-            
-        } else {
-            
-            return view('super_admin/login', ['error' => 'Invalid username or password']);
-        }
-    }
-
+    
 
     public function add_admin_user()
     {
@@ -72,33 +45,25 @@ class SuperAdmin extends Controller {
         echo view('templates/footer',@$data);         
     }    
 
-    public function dashboard() {
+    public function admin_user_list() 
+    {
 
         $data['admins'] = $this->SuperAdminModel->get_all_admins();
         echo view('templates/header', $data);
         echo view('templates/sidebar', $data);
-        echo view('super_admin/dashboard', $data); 
+        echo view('super_admin/admin_list', $data); 
         echo view('templates/footer');             
         //return view('super_admin/dashboard', $data);
     }
-    public function user_dashboard() {
+    public function user_dashboard() 
+    {
         $data['users'] = $this->SuperAdminModel->get_all_users();
 
         echo view('templates/header', $data);
         
         echo view('templates/footer');        
-    }
+    }   
     
-    // public function Logout()
-    // {
-    //     $this->session->sess_destroy();
-    //     redirect('superadmin');
-    // }
-    public function Logout()
-    {
-        $this->session->destroy();
-        return redirect()->to('superadmin');
-    }
   
     public function create_account_from_dashboard()
     {
@@ -109,6 +74,7 @@ class SuperAdmin extends Controller {
         if ($validation->withRequest($this->request)->run() === FALSE) {
             return $this->dashboard();
         } else {
+            $admin_account_id = $_SESSION["user_id"]; 
             $post = $this->request->getPost();
             $new_username = $post["new_username"];
             $new_password = md5($post['new_password']);
@@ -124,7 +90,8 @@ class SuperAdmin extends Controller {
                 'limit_user'   => $limit_user,
                 'first_name'   => $first_name,
                 'last_name'    => $last_name,
-                'role'         => 'admin'
+                'role'         => 'admin',
+                'added_by'     => $admin_account_id
             ];           
             $result = $this->SuperAdmin_model->create_admin_account($data);
             $session = session();
@@ -143,7 +110,8 @@ class SuperAdmin extends Controller {
 
 
 
-    public function update_account_details_admin($id) {
+    public function update_account_details_admin($id) 
+    {
             
             $validation = \Config\Services::validation();
             $validation->setRule('new_username', 'New Username', 'required|trim');    
@@ -154,7 +122,8 @@ class SuperAdmin extends Controller {
 
             } 
             else 
-            {                 
+            {  
+            $admin_account_id = $_SESSION["user_id"];                
             $post = $this->request->getPost();
             $new_username = $post["new_username"];
             $new_password = md5($post['new_password']);
@@ -180,7 +149,8 @@ class SuperAdmin extends Controller {
                 'limit_user'   => $limit_user,
                 'first_name'   => $first_name,
                 'last_name'    => $last_name,
-                'role'         => 'admin'
+                'role'         => 'admin',
+                'added_by'     => $admin_account_id
             ];           
             $result = $this->SuperAdmin_model->update_admin_account_details($id,$data);
             $session = session();
@@ -190,7 +160,7 @@ class SuperAdmin extends Controller {
             }
             else
             {
-              $session->setFlashdata('error_message', 'Admin Record Not Updated.');  
+              $session->setFlashdata('error_message', 'Admin Record Not Updated');  
             }
     
             return redirect()->to('superadmin/dashboard');
@@ -198,7 +168,8 @@ class SuperAdmin extends Controller {
     }
 
 
-    public function create_account() {
+    public function create_account() 
+    {
         $validation = \Config\Services::validation();
         $validation->setRule('new_username', 'New Username', 'required|trim|is_unique[super_admins.username]');
         $validation->setRule('new_password', 'New Password', 'required');
@@ -213,15 +184,9 @@ class SuperAdmin extends Controller {
                 'username' => $new_username,
                 'password' => $new_password,
                 'role'     => 'user'
-            ];
-            // if ($this->SuperAdmin_model->usernameExists($new_username)) {
-            //     // Set flashdata for alert
-            //     $this->session->setFlashdata('alert', 'Username already exists. Choose a different username.');
-            //     return $this->dashboard();
-            // }
+            ];           
     
             $this->SuperAdmin_model->create_user_account($data);
-    
             return redirect()->to('superadmin/user_dashboard');
         }
     }
@@ -239,7 +204,8 @@ class SuperAdmin extends Controller {
             return redirect()->to('superadmin/dashboard');
         }
     }
-    public function login_as_user($user_id) {
+  public function login_as_user($user_id) 
+    {
         $user = $this->SuperAdminModel->get_user_by_id($user_id);
 
         if ($user) {

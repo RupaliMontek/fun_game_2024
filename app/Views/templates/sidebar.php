@@ -1,4 +1,4 @@
-
+<?php  $role = isset($_SESSION["role"]) ? $_SESSION["role"] : null; ?>
         <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
             <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                 <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
@@ -10,30 +10,35 @@
                             <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
                         </a>
                     </li>
+        <?php   if($role=="super-admin"){ ?>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Manage  Admin Users</span> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">      
-                                <a href="<?= base_url("superadmin/dashboard")?>" class="nav-link px-0"> <span class="d-none d-sm-inline">Admin Users List</span></a>
+                                <a href="<?= base_url("superadmin/admin_user_list")?>" class="nav-link px-0"> <span class="d-none d-sm-inline">Admin Users List</span></a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
                             </li>
                         </ul>
-                    </li>                    
+                    </li>  
+                    <?php } 
+                if($role=="admin"){
+                    ?>                  
                     <li>
                         <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Manage  Players Users</span></a>
                         <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="<?= base_url("admin/dashboard"); ?>" class="nav-link px-0"> <span class="d-none d-sm-inline">Players Users List</span></a>
+                                <a href="<?= base_url("admin/players_list"); ?>" class="nav-link px-0"> <span class="d-none d-sm-inline">Players Users List</span></a>
                             </li>
                             <li>
                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
                             </li>
                         </ul>
                     </li>
+                <?php } ?>    
                     <li>
                         <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
