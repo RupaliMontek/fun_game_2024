@@ -1,6 +1,8 @@
 <script src="<?= base_url('public/javascript/validation.js') ?>"></script>
 <link rel="stylesheet" type="" href="<?= base_url('public/css/style.css') ?>">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<div id="balance_amount_extend_request_admin"></div>
+<div id="superadmin_amount_extend_request_status_change"></div>
  </div>
 </div> 
 <div class="container-fluid g-0 forfooter">
@@ -41,9 +43,46 @@ function users_status_change(status,user_id)
     });
 }
 
+function check_list_admin_user_admin_request_superadmin()
+{
+    $.ajax
+    ({
+    url: base_url+'superadmin/check_list_admin_user_admin_request_superadmin',      
+    type: 'GET',
+    data: {},
+    success:function(data)
+    {
+       $('#balance_amount_extend_request_admin').html(data);
+       $('#admin_balance_amount_extend_request').modal('show');    
+    }
+    });
+}
 
-$(document).ready(function () {    
-$("#player_account_add_form").validate(
+
+function superadmin_amount_change_request_status_change()
+{
+    $.ajax
+    ({
+    url: base_url+'admin/superadmin_amount_change_request_status_change',      
+    type: 'GET',
+    data: {},
+    success:function(data)
+    {
+       $('#superadmin_amount_extend_request_status_change').html(data);
+       $('#admin_balance_amount_extend_request').modal('show');    
+    }
+    });
+}
+
+
+
+$(document).ready(function () 
+{ 
+ check_list_admin_user_admin_request_superadmin();   
+ setInterval(check_list_admin_user_admin_request_superadmin, 60000);  
+ superadmin_amount_change_request_status_change();
+ setInterval(superadmin_amount_change_request_status_change, 60000); 
+ $("#player_account_add_form").validate(
     {
       errorElement: "span", 
 

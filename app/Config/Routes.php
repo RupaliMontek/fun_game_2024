@@ -38,7 +38,14 @@ $routes->get('login', 'Login::index');
 $routes->post('login/users_status_change', 'Login::users_status_change');
 $routes->get('logout', 'Login::logout');
 $routes->get('superadmin', 'Superadmin::index');
-
+$routes->get('admin/list_balance_request_list_super_admin', 'admin::list_balance_request_list_super_admin');
+$routes->get('admin/send_balance_request_super_admin', 'admin::send_balance_request_super_admin');
+$routes->post('admin/send_balance_request_superadmin', 'admin::send_balance_request_superadmin');
+$routes->get('superadmin/check_list_admin_user_admin_request_superadmin', 'superadmin::check_list_admin_user_admin_request_superadmin');
+$routes->post('superadmin/change_status_admin_send_request_balance_amount', 'SuperAdmin::change_status_admin_send_request_balance_amount');
+$routes->get('admin/superadmin_amount_change_request_status_change', 'admin::superadmin_amount_change_request_status_change');
+$routes->post('admin/view_notification_admin', 'admin::view_notification_admin');
+$routes->get('superadmin/request_balance_amount_admin', 'Superadmin::request_balance_amount_admin');
 
 
 

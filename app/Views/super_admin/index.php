@@ -79,7 +79,7 @@
             {
                 var counter = document.getElementById("counter");
                 console.log(counter); // Check if counter is not null
-                var seconds = localStorage.getItem("remainingTime") || 59;
+                var seconds = localStorage.getItem("remainingTime") || 120;
                 seconds--;
                 counter.innerHTML = "0:" + (seconds < 10 ? "0" : "") + String(seconds);
                 if (seconds > 0) 

@@ -38,6 +38,13 @@
                             </li>
                         </ul>
                     </li>
+
+                    <li>
+                        <a href="<?= base_url("admin/list_balance_request_list_super_admin"); ?>" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Send Balance Request Super Admin
+                        </span> </a>
+                    </li>
+
                 <?php } ?>    
                     <li>
                         <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">

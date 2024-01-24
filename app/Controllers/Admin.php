@@ -4,20 +4,24 @@ use CodeIgniter\Controller;
 use Config\Database;
 use App\Models\SuperAdmin_model;
 use App\Models\Admin_model;
-
+use App\Models\Notification_model;
 class Admin extends Controller
 {
     protected $session;
-    public function __construct()
-    {
+    public function __construct() {
+        
         $this->SuperAdminModel = new \App\Models\SuperAdmin_model();
         $this->session = \Config\Services::session();
-        $this->Admin_model = new Admin_model();
-        $this->SuperAdmin_model = new SuperAdmin_model();
+        $this->Notification_model = new \App\Models\Notification_model();
+        $this->Admin_model = new \App\Models\Admin_model();
+
+
     }
 
+
     public function index()
-    {   $role = $_SESSION["role"];
+    {   
+        $role = $_SESSION["role"];
         $admin_account_id = $_SESSION["user_id"];  
         echo view("templates/header");
         echo view("templates/sidebar");
@@ -41,6 +45,112 @@ class Admin extends Controller
         echo view("templates/header");
         echo view("templates/sidebar");
         echo view("admin/player_list", $data);
+        echo view("templates/footer");
+    }
+
+    public function view_notification_admin()
+    {        
+       $post                  = $this->request->getPost();
+       $user_id               = $_SESSION["user_id"];
+       $notification_id       = $post["notification_id"];
+       $request_id            = $post["request_id"];       
+       $notification_from_id  = $post["notification_from_id"]; 
+       $data = 
+       array
+       (
+          "notification_status"  => 1
+       );
+       $result = $this->Notification_model->view_notification($notification_id,$data);
+       $session = session();
+       if ($result) 
+       {
+             $session->setFlashdata("success_message","Successfully View Notification.");
+       } 
+       else 
+       {
+            $session->setFlashdata("error_message","Failed View Notification.");
+       }
+       return redirect()->to("admin/list_balance_request_list_super_admin");    
+
+    }    
+
+    public function superadmin_amount_change_request_status_change()
+    {
+        $role = $_SESSION["role"];
+        $user_id = $_SESSION["user_id"];
+        $data["request_details"] = $this->Notification_model->superadmin_amount_change_request_status_change($user_id);
+        if(!empty( $data["request_details"])){
+        echo view("admin/superadmin_amount_extend_request_status_change",$data);
+         }
+    }
+
+    public function list_balance_request_list_super_admin()
+    {
+        $role = $_SESSION["role"];
+        $admin_account_id = $_SESSION["user_id"];
+        $data["admin_users_details"] = $this->Admin_model->get_admin_user_details($admin_account_id);
+        //print_r($data["admin_users_details"]);die();
+        $data["list_admin_request_balance"] = $this->Admin_model->get_all_balanceamout_request_send_superadmin($admin_account_id
+        );  
+
+        echo view("templates/header");
+        echo view("templates/sidebar");
+        echo view("admin/list_balance_request_super_admin", $data);
+        echo view("templates/footer");
+    }
+
+    public function send_balance_request_superadmin()
+    {
+       $post = $this->request->getPost();
+       $admin_account_id = $_SESSION["user_id"];
+       $admin_users_details = $this->Admin_model->get_admin_user_details($admin_account_id);
+       $admin_superadmin_id    = $admin_users_details->added_by;
+       $current_wallet_amount  = $admin_users_details->current_wallet; 
+       $data = 
+       array
+       (
+        "balance_request_amt"    => $post["balance_request_amt"],
+        "admin_id"               => $_SESSION["user_id"],
+        "superadmin_id"          => $admin_superadmin_id,
+        "current_wallet_amount"  => $current_wallet_amount,
+        "created_at"             => date("Y-m-d h:i:s"),
+       );
+       $result = $this->Admin_model->send_balance_request_superadmin($data);
+
+       $para = 
+       array
+       (
+        "request_id"            =>    $result,
+        "notification_title"    =>    "Balance Amount Extends Request Send Superadmin",
+        "notification_from_id"  =>    $_SESSION["user_id"],
+        "notification_to_id"    =>    $admin_superadmin_id,
+        "notification_type"     =>    "extend request balance amount",
+        "created_at"            => date("Y-m-d h:i:s"),
+
+       );
+        $results= $this->Notification_model->notification_insert($para);      
+        $session = session();
+        if ($result) 
+        {
+             $session->setFlashdata("success_message","Send  Balance Request Successfully To Superamin");
+        } 
+        else 
+        {
+            $session->setFlashdata("error_message","Failed Send  Balance Request Successfully To Superamin");
+        }
+
+        return redirect()->to("admin/list_balance_request_list_super_admin");       
+
+    }
+
+    public function send_balance_request_super_admin()
+    {
+        $role = $_SESSION["role"];
+        $admin_account_id = $_SESSION["user_id"];
+        $data["admin_users_details"] = $this->Admin_model->get_admin_user_details($admin_account_id); 
+        echo view("templates/header");
+        echo view("templates/sidebar");
+        echo view("admin/send_balance_request_super_admin.php", $data);
         echo view("templates/footer");
     }
 

@@ -19,6 +19,19 @@ class SuperAdmin_model extends Model {
          return $superAdmin = $query->getRow();
     }    
 
+    public function update_request_superadmin_balance_amount_for_admin($request_id,$para)
+    {
+        $builder = $this->db->table("tbl_admin_request_balace_super_admin");
+        $builder->where('request_id',$request_id);
+        return $builder->update($para);
+    }
+
+    public function admin_get_request_balance_amount_by_request_id($request_id)
+    {
+        $query = $this->db->table('tbl_admin_request_balace_super_admin')
+        ->getWhere(['request_id' => $request_id]);
+        return $query->getRow();
+    }
 
     public function create_admin_account($data) {
         $this->db->table('super_admins')->insert($data);
@@ -39,6 +52,15 @@ class SuperAdmin_model extends Model {
     // {
     //     return $this->where('id', $admin_id)->first();
     // }
+
+    public function request_balance_amount_admin()
+    {
+      $builder = $this->db->table("tbl_admin_request_balace_super_admin");
+      $query = $builder->join('super_admins', 'super_admins.id = tbl_admin_request_balace_super_admin.admin_id')->get(); 
+      //$query = $builder->where('admin_id', $admin_id)->get();    
+      return $query->getResult(); // or $query->getResultArray()
+    }
+
     public function get_admin_by_id(int $admin_id): ?object
     {
         $query = $this->db->table('super_admins')->getWhere(['id' => $admin_id]);
@@ -56,9 +78,6 @@ class SuperAdmin_model extends Model {
 
 /*public function get_all_player_users_list($user_id)
 {
-    $builder = $this->db->table("super_admins");
-    $builder->where('added_by', $user_id);
-    $query = $builder->where('role', 'user')->get();
     return $query->getResult(); 
 }*/
 
